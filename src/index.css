@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+
+}
+
+body {
+  background-color: #f4f4f9;
+  line-height: 1.6;
+}
+/* Navbar 1st Version */
+.navbar {
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 1px solid #ddd;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.navbar h1 {
+  color: #0c3868;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar .links {
+  margin-left: auto;
+}
+
+.navbar a {
+  margin-left: 20px;
+  text-decoration: none;
+  padding: 8px 12px;
+  color: #333;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffffff;
+  background-color: #ff6347;
+}
+
+/*---------------- Navbar Second Version------------------- */
+.navbar2 {
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 1px solid #ddd;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.navbar2 h1 {
+  color: #0c3868;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.navbar2 .links {
+  margin-left: auto;
+}
+
+.navbar2 a {
+  margin-left: 20px;
+  text-decoration: none;
+  padding: 8px 12px;
+  color: #333;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar2 a:hover {
+  color: #ffffff;
+  background-color: #ff6347;
+}
+
+/* ------------------------------------------------------------- */
+.content {
+  width: 100%;
+  padding: 10px;
+  background-color: #ffffff;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.content h2 {
+  margin-bottom: 10px;
+  color: #0c3868;
+  font-size: 22px;
+  font-weight: bold;
+}
+.content h3 {
+  margin-bottom: 10px;
+  color: #ff6347;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.content p {
+  margin-bottom: 20px;
+  color: #000000;
+  line-height: 1.5;
+}
+
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* instrcutions modal overlay to cover the background */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999; 
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* instuctions modal content */
+.modal-content {
+  background-color:white;
+  margin-top: 2%;
+  margin-left: 1%;
+  color:'black';
+  padding: 20px;
+  border-radius: 10px;
+  width: 40%;
+  max-height: 90vh; /* Limitiert die maximale Höhe auf 80% der Viewport-Höhe */
+  overflow-y: auto;
+  text-align: left;
+  align-items: right;
+}
+
+
+/* ------------------Modal overlay VERSION 2 to cover the background------------------- */
+.modal-overlay2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 9999; 
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Modal content */
+.modal-content2 {
+  background-color:white;
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+  top: 8%;
+  color:'black';
+  padding: 30px;
+  border-radius: 10px;
+  width: 40%;
+  max-height: 90vh; /* Limitiert die maximale Höhe auf 80% der Viewport-Höhe */
+  overflow-y: auto;
+  text-align: left;
+  align-items: right;
+  font-size: 15px;
+}
+/* ----------------------------------------- */
+
+/* ---------Progressbar----------- */
+
+/* ProgressBar.css */
+.progress-container {
+  width: 125px;
+  background-color: #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 25px;
+  margin: 20px 0;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #4caf50;
+  transition: width 0.3s ease;
+}
+
+
+/* -------------------------------- */
+
+
+/* Help button style */
+.help-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #0c3868;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.help-button:hover {
+  background-color: #ff6347;
+}
+
+/* Close button inside modal */
+.close-button {
+  position: 'fixed';
+  margin-top: 20px;
+  margin-left: 40%;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #0c3868;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.close-button:hover {
+  background-color: #ff6347;
+}
+
+/* transfer/submit data button  */
+.transfer-button {
+  padding: 10px 10px;
+  font-size: 16px;
+  background-color: #0c3868;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: auto;
+  margin-bottom: 5px;
+  transition: background-color 0.3s ease; /* für sanfte Übergänge */
+}
+
+.transfer-button:hover {
+  background-color: #ff6347; /* Farbe bei Hover ändern */
+}
+
+
+
+
+
+/* ----------------------------Scneario pages --------------------------------- */
+
+.page-container {
+  display: flex;
+  width:100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  background-color: #f7f7f7;
+}
+
+.main-content {
+  width: 100%;
+  max-width: 60%;
+  background-color: #ffffff; 
+  border-radius: 20px; /* Rounded corners */
+  padding: 40px; 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto; /* Centering and spacing */
+}
+.main-content1 {
+  width: 100%;
+  max-width: 70%;
+  background-color: #ffffff; 
+  padding: 40px; 
+  margin: 30px auto; /* Centering and spacing */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+body {
+  background-color: #ffffff; /* Matches the content background */
+}
+
+.main-content1 p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333333;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-align: justify; /* Optional */
+}
+.main-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333333;
+  margin-bottom: 20px;
+  text-align: justify; /* Optional */
+}
+.main-content h2 {
+  font-size: 27px;
+  line-height: 1.6;
+  color: #0c3868;
+  margin-bottom: 20px;
+  text-align: justify; /* Optional */
+}
+.quiz-section {
+  margin-top: 30px;
+}
+
+.question-block {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.answer-options {
+  display: flex;
+  margin-top: 10px;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.radio-label {
+  font-size: 15px;
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+.buttons-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.button {
+  background-color: #0c3868;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #ff6347;
+}
+
+.button-disabled {
+  background-color: #cccccc;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: not-allowed;
+}
+
+.error-message {
+  margin-top: 20px;
+  color: red;
+  font-size: 16px;
+}
+
+/* Container to center the image */
+.image-container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: 100%; 
+  padding-bottom: 20px;
+}
+
+/* Make the image responsive */
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+  display: block; 
+}
+
+/* Smaller size for the second image */
+.smaller-image {
+  max-width: 80%; /* Adjust this value to control the size */
+}
+
+.separator-line {
+  border: none;
+  border-top: 1px solid #ccc; /* Thin, light grey line */
+  margin: 10px 0; /* Space around the line */
+  width: 100%; /* Make it span across the container */
+}
+
+.custom-input {
+  width: 100%;
+  padding: 10px 15px; 
+  border: 2px solid #0c3868; 
+  border-radius: 10px; /* Rounded corners */
+  font-size: 16px; 
+  outline: none; /* Remove default outline */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for focus effect */
+}
+
+/* Focus state for the input */
+.custom-input:focus {
+  border-color: #1b497a; /* Highlight the border when focused */
+  box-shadow: 0 0 5px rgba(0, 120, 212, 0.5); /* Add a subtle shadow on focus */
+}
