@@ -28,27 +28,27 @@ Here is a preview of the interaction design:
 - Create a Google Maps API key. It can be done here:[https://developers.google.com/maps/documentation/javascript/get-api-key] 
 
 
-### Instruction for Setup
+### Instruction for Setup:
 
-# 1. Clone the repository:
+## 1. Clone the repository:
 
 ``` git clone https://github.com/your-repo-url ```
 
-# 2. Install dependencies:
+## 2. Install dependencies:
 
 ``` npm install ```
 
-# 3. Add APIKEY from Google Maps place this key in a file called ```.env``` within ```/backend```. 
+## 3. Add APIKEY from Google Maps place this key in a file called ```.env``` within ```/backend```. 
 
 ```APIKEY="your_api_key"```
  
-# 4. Run the project locally:
+## 4. Run the project locally:
  
 ``` npm run start```
 
 Now that you have the frontend running you need set up the backend: 
 
-# 5. Build and run a docker image by firstly navigating into the ``` interaction_design/backend``` folder.
+## 5. Build and run a docker image by firstly navigating into the ``` interaction_design/backend``` folder.
 
 ``` docker-compose up --build```
 
