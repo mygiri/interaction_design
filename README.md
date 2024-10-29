@@ -10,7 +10,7 @@ The original interface was implemented by Fabrizio Kuruc as part of his master's
 The focus of my research was on refining user interaction, enhancing interface accessibility, and addressing key usability issues identified through two rounds of user testing.
 
 Here is a preview of the interaction design:
-![Interface Screenshot](./src/img/screenshot_interface.png)
+![Interface Screenshot](./src/img/last_version.png)
 
 ## Project structure:
 
@@ -47,16 +47,15 @@ Now that you have the frontend running you need set up the backend:
 
 5. Build and run a docker image by firstly navigating into the ``` interaction_design/backend``` folder.
 
-``` cd backend```
 ``` docker-compose up --build```
- 
-(Note: this Dockerfile is just for testing purposes and only runs on localhost)
 
 
 - ```-d```: Runs the container in detached mode (in the background).
 - ```p 5000:5000```: Maps port 5000 of the host to port 5000 of the container.
 - ```--name my_container```: Names the container my_container.
 - ``` my_backend```:the name of the Docker image that was build in step 4
+
+(__Note: this Dockerfile is just for testing purposes and only runs on localhost__)
 
 ### Reaching the interfaces
 - Main interaction design (design iteration 1): http://localhost:3000/
