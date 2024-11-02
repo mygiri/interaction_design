@@ -4,9 +4,9 @@ Accompanying repository for my bachelor thesis.
 
 ## Overview
 
-The bachelor thesis "Optimizing User Experience through Iterative Feedback: Usability Testing and Interface Design" was written as part of my studies at Freie Universität Berlin. The goal of this study was to enhance a previously implemented interface through an iterative design approach. The interface incorporates Human-in-the-Loop Bayesian Optimization within the framework of Differential Privacy, situating it in a time-relevant field of study.
+My bachelor thesis, "Optimizing User Experience through Iterative Feedback: Usability Testing and Interface Design", was written as part of my studies at Freie Universität Berlin. The goal of this study was to enhance a previously implemented interface through an iterative design approach. The interface incorporates Human-in-the-Loop Bayesian Optimization within the framework of Differential Privacy, situating it in a time-relevant field of study.
 
-The original interface was implemented by Fabrizio Kuruc as part of his master's thesis [GitHub Repository](https://github.com/fabriz-io/universal-preference-exploration) and served as the foundation for this work.
+The original interface, implemented by Fabrizio Kuruc as part of his master's thesis, served as the foundation for this work. His implementation can be found [here](https://github.com/fabriz-io/universal-preference-exploration). 
 The focus of my research was on refining user interaction, enhancing interface accessibility, and addressing key usability issues identified through two rounds of user testing.
 
 Here is a preview of the interaction design:
@@ -38,7 +38,7 @@ Here is a preview of the interaction design:
 
 ``` npm install ```
 
-#### 3. Add APIKEY from Google Maps place this key in a file called ```.env``` within ```/backend```. 
+#### 3. Add APIKEY from Google Maps and place this key in a file called ```.env``` within ```/backend```. 
 
 ```APIKEY="your_api_key"```
  
@@ -46,9 +46,9 @@ Here is a preview of the interaction design:
  
 ``` npm run start```
 
-Now that you have the frontend running you need set up the backend: 
+Now that you have the frontend running, you need to set up the backend: 
 
-#### 5. Build and run a docker image by firstly navigating into the ``` interaction_design/backend``` folder.
+#### 5. Build and run a docker image by navigating into the ``` interaction_design/backend``` folder.
 
 ``` docker-compose up --build```
 
@@ -56,7 +56,7 @@ Now that you have the frontend running you need set up the backend:
 - ```-d```: Runs the container in detached mode (in the background).
 - ```p 5000:5000```: Maps port 5000 of the host to port 5000 of the container.
 - ```--name my_container```: Names the container my_container.
-- ``` my_backend```:the name of the Docker image that was build in step 4
+- ``` my_backend```:the name of the Docker image that was built in step 4
 
 (__Note: this Dockerfile is just for testing purposes and only runs on localhost__)
 
