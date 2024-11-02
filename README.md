@@ -1,10 +1,10 @@
-# Optimizing User Experience through Iterative Feedback
+# Optimizing User Experience through Iterative Usability Testing
 
 Accompanying repository for my bachelor thesis.
 
 ## Overview
 
-My bachelor thesis, "Optimizing User Experience through Iterative Feedback: Usability Testing and Interface Design", was written as part of my studies at Freie Universität Berlin. The goal of this study was to enhance a previously implemented interface through an iterative design approach. The interface incorporates Human-in-the-Loop Bayesian Optimization within the framework of Differential Privacy, situating it in a time-relevant field of study.
+My bachelor thesis, "Optimizing User Experience through Iterative Usability Testing", was written as part of my studies at Freie Universität Berlin. The goal of this study was to enhance a previously implemented interface through an iterative design approach. The interface incorporates Human-in-the-Loop Bayesian Optimization within the framework of Differential Privacy, situating it in a time-relevant field of study.
 
 The original interface, implemented by Fabrizio Kuruc as part of his master's thesis, served as the foundation for this work. His implementation can be found [here](https://github.com/fabriz-io/universal-preference-exploration). 
 The focus of my research was on refining user interaction, enhancing interface accessibility, and addressing key usability issues identified through two rounds of user testing.
